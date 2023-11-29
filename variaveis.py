@@ -22,6 +22,9 @@ print(len(nome))
 
 print(nome.upper)
 
-for x in nome:
-    print(x)
+#for x in nome:
+#    print(x)
+
+# [] conchetes usa para especificar algum lugar/espaço, por exemplo [5] vai mostrar a 5 letra do nome ou [5:12] vai mostrar da 5ª a 12ª letra do nome
+print(nome[0:10])
 
