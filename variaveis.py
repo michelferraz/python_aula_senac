@@ -4,8 +4,6 @@ int = 10
 float = 10.5
 boolean = true
 
-"""
-
 # nome das variaveis
 # não pode começar com numeros, e diversos tipos de caracteres, tb nao pode iniciar com letra maiuscula (geralmente é usada para funções)
 
@@ -25,6 +23,29 @@ print(nome.upper)
 #for x in nome:
 #    print(x)
 
-# [] conchetes usa para especificar algum lugar/espaço, por exemplo [5] vai mostrar a 5 letra do nome ou [5:12] vai mostrar da 5ª a 12ª letra do nome
-print(nome[0:10])
+# [] conchetes usa para especificar algum lugar/espaço, por exemplo [5] vai mostrar a 5ª letra do nome ou [5:12] vai mostrar da 5ª a 12ª letra do nome, ou 2x :: (2 pontos) para mostrar até o final
+print(nome[5::])
+"""
+a,b,c = 10,3,5
+print(type(a))
+print(a,b,c)
+a="michel"
+print(type(a))
+print(a,b,c)
+a=100
+print(type(a))
+print(a,b,c)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
