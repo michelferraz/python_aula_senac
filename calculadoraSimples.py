@@ -1,5 +1,10 @@
 #pegar dois números e efetuar mostrando na tela a soma, divisão, multiplicação e subtração da seguinte maneira. ex:
 # a soma dos dois números é: SOMA
+# porcentagem %, é valor * 0.1 (para 10%), 0.5 (para 50%), sempre usar essa multiplicação de 0. alguma coisa referente ao porcentagem
+# exemplo de subtração com porcentagem:
+# salariototal = salariofixo + comissao
+# salarioliquido = salariototal - (salariototal * 0.11) 
+# no segundo subtrai o valor pela soma+11%.
 
 #exercicio feito
 #n1 = int(input ("Digite o primeiro número : "))
