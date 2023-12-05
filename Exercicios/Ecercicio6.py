@@ -3,6 +3,10 @@
 
 a = 100
 b = 50
+print ("O valor A é:",a)
+print ("O valor B é:",b)
 
-print(input("O valor da A"))
-
+a = 50
+b = 100
+print ("Agora o valor A é:",a)
+print ("Agora o valor B é:",b)
