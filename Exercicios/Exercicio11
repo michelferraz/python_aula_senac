@@ -1,0 +1,10 @@
+'''
+Faça um algoritmo que receba o preço de custo de um produto e mostre o valor de venda. Sabe-se que o preço de 
+custo receberá um acréscimo de acordo com um percentual informado pelo usuário
+'''
+
+produto = int(input("Digite o valor de custo do produto: "))
+acrescimo = (produto + (produto * 0.8)) #acrescimo de 80% no produto
+
+print("O valor de venda deste produto é de:",acrescimo,"R$")
+             

@@ -81,17 +81,23 @@ print(listacarros)
 
 
 print(line)
-#exercicio: montar uma lista a partir do Mustang e a lista total embaixo
-i=0
-while i <len(listacarros): #lista até Mustang
-    print(i,"-",listacarros[i])
+#exercicio: encontrar a posição do Mustang e montar uma lista nova a partir dele
+print(listacarros)
+#posicao = 0 #usado apenas para mostrar a posição do Mustang, mas poderia usar a variante global "i"
+i = 0
+while i < len(listacarros):
     if listacarros[i] == "Mustang":
-        break
-    i+=1
-print(line)
-while i <len(listacarros): #Inicia lista a partir do Mustang
-    print(i,"-",listacarros[i])
-    i+=1
+        posicao = i
+    i += 1
+
+print(posicao) #encontrou a posição do Mustang
+
+listanova = [] #agora é criar uma lista nova a partir da posição do Mustang
+while posicao < len(listacarros):
+    listanova.append(listacarros[posicao])
+    posicao += 1
+
+print(listanova)
 
    
     
@@ -103,3 +109,18 @@ while i <len(listacarros): #Inicia lista a partir do Mustang
 print(line)
 newlist = ["Monza"] #parenteses com virgula = tuple (vc não consegue modificar, usar append ou adicionar outras informações posteriores, se for lista, usar conchetes, pois consegue adicionar informações dentro dela)
 print(type(newlist))
+
+
+print(line) #ensinando a transformar uma tupla (tuple) em [list], caso queira alterar algo (lembrando que tuple serve para proteger dados que voce não quer alterar)
+# então voce altera a tuple para lista e depois altera para tuple novamente
+tuplaFrutas = ("Maça", "Pera", "Banana", "Morango") #criado uma variavel tipo tuple ()
+print(type(tuplaFrutas)) #descobrindo o tipo (type)
+x = list(tuplaFrutas) #cria uma variavel lista ao converter x = lista(+variavel antiga em tuple)
+print(type(x))
+x.append("Melancia") #adiciona com append, um valor (melancia) na lista tuplaFrutas(que agora é x)
+print(x)
+tuplaFrutas = tuple(x) #volta a variavel que virou lista em tupla
+print(type(tuplaFrutas)) 
+print(tuplaFrutas) #mostra o resultado
+
+
