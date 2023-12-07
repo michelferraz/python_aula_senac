@@ -74,4 +74,51 @@ print(produto) #mostra todo o produto e as variaveis
 print(produto["cores"][1].capitalize()) #mostra a variavel cores e a posição da cor escolhida, no caso a 1 = azul
 print(produto["tamanho"][2]) #mostra a variavel tamanho na posição 2 = G
 
+#update, pop e append
+#produto["nome"] = "blusa" #é uma maneira de fazer update de uma variavel da lista
+produto.update({"nome" : "shorts"}) #outra maneira de fazer um update na variavel
+produto.update({"marca" : ["hb", "oakley"]}) #aqui eu criei uma variavel (se fosse só o HB), ou uma lista (se for mais de um item), quando for só um item não precisa do conchetes, quandor for mais de um item, precisa do conchetes dentro da chave e do parentes
+produto.update({"nome" : ["camiseta", "blusa", "shorts"]})
+produto["marca"][0] = "nokia" #fez a alteração de 1 variavel dentro de "marca" na posição "0"
+produto["tamanho"].append("XG") #adicionou uma variavel dentro de tamanhos, no caso o XG
+produto["cores"].pop(2) #removeu uma das cores, no caso a posição 2 (verde)
 
+print(produto["nome"])
+print(produto["cores"])
+print(produto["tamanho"])
+print(produto["marca"])
+
+
+print(line)
+print(line2)
+produtos = {
+    "coca-cola lata" : {
+        "quantidade" : "250ml",
+        "valor" : 5.00
+    },
+    "coca-cola garrafa" : {
+        "quantidade" : "350ml",
+        "valor" : 6.00
+    },
+    "coxinha" : {
+        "tamanho" : "medio",
+        "valor" : 5.00
+    }
+}
+produtos["coca-cola lata"]["valor"] = 10.00 #maneiras de alterar o valor (uma variavel) dentro da variavel produtos
+produtos["coca-cola garrafa"]["valor"] = 10.00
+produtos["coxinha"]["valor"] = 10.00 
+produtos.update({       #para fazer update, uma maneira facil é dar a chave e pular uma linha, para lembrar que é a adição de outro produto dentro de "produtos"
+    "esfira" : {
+        "tamanho" : "medio",
+        "valor" : 9.00
+    }
+}) 
+print(produtos)
+print(produtos["coca-cola lata"])
+print(produtos["coca-cola garrafa"])
+print(produtos["coxinha"])
+print(produtos["esfira"])
+
+#for x in produtos:
+    #print(x)

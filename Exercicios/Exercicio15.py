@@ -3,7 +3,7 @@
 
 numero = int(input("Digite um número: "))
 
-if numero <= 200:
+if numero <= (100:200):
     print("Este número está entre os valores de 100 a 200.")
 elif numero >=100:
         print("Este número está entre os valores de 100 a 200.")
